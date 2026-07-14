@@ -9,7 +9,7 @@ function calculateBill() {
         return;
     }
 
-    if (units < 0) {
+    if (units < 0 || units== -0) {
         alert("Units should be greater than 0");
         return;
     }
@@ -27,7 +27,7 @@ function calculateBill() {
 
     result.innerHTML = `<h3>Customer Name : ${name}</h3>
     <h3>Units Consumed : ${units}</h3>
-    <h3>Total Bill:Rs ${bill}</h3>`
+    <h3>Total Bill: Rs ${bill}</h3>`
 }
 
 
@@ -35,5 +35,5 @@ function reset() {
     document.getElementById("customerName").value = ""
     document.getElementById("unitsConsumed").value = ""
     document.getElementById("result").innerHTML = ""
-    result.innerHTML = `<h3> Result</h3>`
+    result.innerHTML = `<h3>Generate Bill</h3>`
 }
