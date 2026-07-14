@@ -4,7 +4,7 @@ function calculateBill() {
 
     let result = document.getElementById("result")
 
-    if (name.trim() == "") {
+    if (name.trim() == ""|| isNaN(units)) {
         alert("Please fill all field");
         return;
     }
@@ -18,11 +18,16 @@ function calculateBill() {
     if (units <= 100) {
         bill = units * 5;
     }
-    
+    else if (units <= 200 && units > 100) {
+        bill = 500 + ((units-100) * 7);
+    }
+    else {
+        bill = 1200 + ((units-200) * 10);
+    }
 
     result.innerHTML = `<h3>Customer Name : ${name}</h3>
     <h3>Units Consumed : ${units}</h3>
-    <h3>Total Bill:${bill}</h3>`
+    <h3>Total Bill:Rs ${bill}</h3>`
 }
 
 
