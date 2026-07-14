@@ -1,12 +1,16 @@
+*{
+     font-family: monospace;
+}
 .calculator {
     border: 2px solid;
-    width: 500px;
+    width: 600px;
     padding: 20px;
     border-radius: 20px;
-    margin-top: 250px;
-    margin-left: 800px;
+    margin-top: 200px;
+    margin-left: 700px;
     background-color: rgb(238, 211, 170);
     border-color: rgb(95, 58, 9);
+    text-align: center;
 }
 
 label {
@@ -23,14 +27,16 @@ h1 {
 }
 
 body {
-    background-color: rgb(252, 239, 220);
+    background-color: rgb(247, 227, 197);
 }
 
 button {
     background-color: rgb(104, 83, 51);
-    border-radius: 10px;
+    border: 2px solid rgb(104, 83, 51);
+    border-radius: 15px;
     padding: 8px;
     margin: 10px;
+    margin-left: 20px;
     font-size: medium;
     font-family: 'Times New Roman', Times, serif;
     color: rgb(44, 26, 2);
@@ -42,19 +48,19 @@ button:hover {
 
 input {
     border-radius: 5px;
-    background-color: rgb(252, 239, 220);
+    background-color: rgb(247, 227, 197);
     height: 20px;
 }
 
 #result {
     width: 300px;
-    border: 2px solid black;
+    border: 2px solid;
     border-radius: 10px;
-    border-color: rgb(44, 26, 2);
+    border-color: rgb(118, 82, 35);
     text-align: center;
     padding: 10px;
     background-color: rgb(244, 179, 141);
-    margin-left: 90px;
+    margin-left: 150px;
     border-style: dashed;
     color: rgb(95, 58, 9);
 }
