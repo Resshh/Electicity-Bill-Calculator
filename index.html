@@ -15,8 +15,9 @@
         <input type="text" id="customerName" placeholder="Enter your name"> <br><br>
         <label for="unitsConsumed">Units Consumed :</label>
         <input type="number" id="unitsConsumed" placeholder="Enter units consumed"> <br><br>
-        <button> Calculate Bill</button>
-        <button>Clear </button> <br><br>
+        <button onclick="calculateBill()"> Calculate Bill</button>
+        <button onclick="reset()" >Clear </button> <br><br>
+
         <div id="result">Result</div>
     </div>
     <script src="script.js">
